@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./logo-rd.jpg" alt="">
+        <nav>
+            <ul>
+                <li><a href="/"></a>Perfil</li>
+                <li>
+                    <a href="/form.html">Comentarios</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form action=" " method="post">
+        <div>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="add name">
+        </div>
+        <div>
+            <label for="mail">Email</label>
+            <input type="email" name="email" id="mail" placeholder="add email">
+        </div>
+        <fieldset>
+            <legend>Trabajos Favoritos</legend>
+            <label for="tres-rayas">Tres rayas</label>
+            <input type="checkbox" name="favorite" id="tres-rayas" value="tres-rayas">
+            <label for="morse">Traductor Morse</label>
+            <input type="checkbox" name="favorite" id="morse" value="morse">
+            <label for="to-do-list">To do list</label>
+            <input type="checkbox" name="favorite" id="to-do-list" value="to-do-list">
+        </fieldset>
+        <div><textarea name="comment" id="comment" rows="6" placeholder="Add comment..."></textarea></div>
+        <div>
+            <button>Guardar</button> 
+            <input type="reset" value="Reset">  
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.main{
+    height: 70vh;
+    width: 90%;
+    max-width: 680px;
+    margin: 0 auto;
+    position: relative;
+  
+    section{
+        text-align:justify;
+        text-indent: 1rem;
+        z-index: 1;
+        .img{
+        opacity: 0.3;
+        background-image: url("./../logo-rd.png");
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        }   
+    }
+}
