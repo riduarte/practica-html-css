@@ -1,18 +1,61 @@
 header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: var(--bg-color);
     position: sticky;
     top:0;
-    padding: 2rem;
-    background-color: white;
-    nav{
-        ul{
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+/* Checkbox oculto */
+#menu-toggle {
+    display: none;
+}
 
+/* Icono hamburguesa */
+.menu-icon {
+    display: block;
+    width: 40px;
+    cursor: pointer;
+}
+.menu-icon div {
+    background: var(--main-brand-color);
+    height: 2px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+/* Lista del menú */
+.nav-links {
+    display: none;
+    text-align: center;
+    background-color: var(--bg-color);
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+}
+.nav-links a { 
+    display: block;
+    padding: 8px;
+}
+
+/* Mostrar menú al hacer clic */
+#menu-toggle:checked + .nav-links {
+    display: block;
+   
+} 
+
+/* Nav de botones     nav{
+        ul{
             display: flex;
             justify-content: center;
             gap: 1rem;
-            list-style: none;
-            margin: 0;
-            padding: 0;
         }
-    }  
-}
-
+    } */

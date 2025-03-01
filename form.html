@@ -3,43 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/foorter.css">
 </head>
 <body>
-    <header>
-        <img src="./logo-rd.jpg" alt="">
+    <header> 
+        <h1 class="title">Richard Duarte</h1>
+    <nav>
+        <label for="menu-toggle" class="menu-icon">
+            <div></div>
+            <div></div>
+        </label>
+    </nav>
+    <input type="checkbox" id="menu-toggle">
+    <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/form.html">Contacto</a>
+    </div>
+</header>
+    <main>
+        <h1>Contacto</h1>
+        <form action=" " method="post" >
+            <div class="form-element">
+                <label for="name">Nombre :</label>
+                <input type="text" name="name" id="name" placeholder="Escriba nombre" required>
+            </div>
+            <div class="form-element">
+                <label for="name">Apellidos :</label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Escriba apellidos" required>
+            </div>
+            <div class="form-element">
+                <label for="name">Telefono:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Telf" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+            <div class="form-element">
+                <label for="mail">Email :</label>
+                <input required
+                 type="email" 
+                 name="email" 
+                 id="mail" 
+                 placeholder="add email">
+            </div>
+            <fieldset>
+                <legend>Me conociste en:</legend>
+                <label for="Universidad">Universidad</label>
+                <input type="checkbox" name="Me-conoce-de" id="Universidad" value="Universidad">
+                <label for="Keepcoding-off">Keepcoding-off</label>
+                <input type="checkbox" name="Me-conoce-de" id="Keepcoding-off" value="Keepcoding-off">
+                <label for="GitHub">Github</label>
+                <input type="checkbox" name="Me-conoce-de" id="GitHub" value="GitHub">
+            </fieldset>
+            <div class="form-element">
+                <label for="comment">Comentarios:</label>
+                <textarea name="comment" id="comment" maxlength="180" rows="6" placeholder="Add comment..."></textarea></div>
+            <div>
+                <button class="btn">Guardar</button> 
+                <input class="btn secondary" type="reset" value="Reset">  
+            </div>
+        </form>
+    </main>
+    <footer>
         <nav>
             <ul>
-                <li><a href="/"></a>Perfil</li>
                 <li>
-                    <a href="/form.html">Comentarios</a>
+                    <a href="" target="_blank">Linkenid</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">Twitter</a>
                 </li>
             </ul>
         </nav>
-    </header>
-    <form action=" " method="post">
-        <div>
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="add name">
-        </div>
-        <div>
-            <label for="mail">Email</label>
-            <input type="email" name="email" id="mail" placeholder="add email">
-        </div>
-        <fieldset>
-            <legend>Trabajos Favoritos</legend>
-            <label for="tres-rayas">Tres rayas</label>
-            <input type="checkbox" name="favorite" id="tres-rayas" value="tres-rayas">
-            <label for="morse">Traductor Morse</label>
-            <input type="checkbox" name="favorite" id="morse" value="morse">
-            <label for="to-do-list">To do list</label>
-            <input type="checkbox" name="favorite" id="to-do-list" value="to-do-list">
-        </fieldset>
-        <div><textarea name="comment" id="comment" rows="6" placeholder="Add comment..."></textarea></div>
-        <div>
-            <button>Guardar</button> 
-            <input type="reset" value="Reset">  
-        </div>
-    </form>
+    </footer>
+    
 </body>
 </html>

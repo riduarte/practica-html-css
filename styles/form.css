@@ -1,0 +1,16 @@
+main{
+    max-width: 520px;
+    margin: 0 auto;
+    background-color:var(--bg-color);
+    padding: 2rem 2rem;
+    border-radius: 4px;
+}
+fieldset{
+    border: none;
+    label{
+        margin: 0 10px;
+
+    }
+
+
+}

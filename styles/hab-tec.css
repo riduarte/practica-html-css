@@ -1,0 +1,33 @@
+.progress-container {
+    width: 90%px;
+    height: 8px;
+    background-color: #fcfcfc; /* Fondo de la barra */
+    overflow: hidden;
+    border-bottom: 1px black solid;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%; /* Empieza vacía */
+    background-color: var(--main-brand-color); /* Color de la barra */
+    line-height: 3px;
+    transition: width 1s ease; /* Transición suave */
+}
+
+li:hover .progress-bar {
+    width: 90%; /* Ajusta el porcentaje al pasar el ratón */
+}
+
+.hab-tec{
+
+    ul{
+        width: 60%;
+        list-style:circle;
+        
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.7rem;
+    }
+}
