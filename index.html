@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <meta property="og:title" content="Richard Duarte" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/header.css">
@@ -13,6 +16,9 @@
     <link rel="stylesheet" href="./styles/hab-tec.css">
     <link rel="stylesheet" href="./styles/proyectos.css">
     <link rel="stylesheet" href="./styles/foorter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header> 
@@ -25,7 +31,8 @@
         </nav>
         <input type="checkbox" id="menu-toggle">
         <div class="nav-links">
-            <a href="#perfil">Home</a>
+            <a href="/index.html">Home</a>
+            <a href="/trabajos.html">Trabajo</a>
             <a href="/form.html">Contacto</a>
         </div>
     </header>
@@ -35,7 +42,7 @@
     </div>
     <div class="main">
         <section class="bio">
-            <h2 id="Perfil">Acerca de mi</h2>
+            <h2 id="perfil">Acerca de mi</h2>
             <div class="perfil">
             <p> Apasionado por la tecnología y el desarrollo web, busco iniciar mi carrera como programador junior. Soy una persona
                 trabajadora, comprometida y orientada a resultados, con ganas de aprender y aportar en proyectos innovadores. Mi meta es especializarme en la creación de interfaces web atractivas y funcionales, combinando creatividad con tecnología.</p>
@@ -45,97 +52,59 @@
                 <h2>Habilidades técnicas</h2>
                 <ul>
                     <li>
-                        <span>Lenguajes: Python, JavaScript.</span>
+                        <p>Lenguajes: Python, JavaScript.</p>
                         <div class="progress-container ">
-                            <div class="progress-bar"></div>
+                            <div class="progress-bar" data-percent="60">
+                            </div><p class="percent">60%</p>
+                            </div>
+                    </li>
+                    <li> 
+                        <p>Frontend: HTML, CSS, React.</p>
+                        <div class="progress-container ">
+                        
+                            <div class="progress-bar" data-percent="80">
+                            </div><p class="percent">80%</p>
+                        </div>  
+                    </li>
+                    <li>
+                        <p> Bases de datos: MySQL.</p>
+                        <div class="progress-container ">
+                            <div class="progress-bar" data-percent="40"></div>
+                            <p class="percent">40%</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Herramientas: Git, GitHub, VS Code.</p>
+                        <div class="progress-container ">
+                            <div class="progress-bar" data-percent="60"></div>
+                            <p class="percent">60%</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p> Ofimática y herramientas digitales.</p>
+                        <div class="progress-container ">
+                            <div class="progress-bar" data-percent="80"></div>
+                            <p class="percent">80%</p>
                         </div>
 
-                    </li>
-                    <li>
-                        <span>Frontend: HTML, CSS, React.</span>
-                        <div class="progress-container ">
-                            <div class="progress-bar"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <span> Bases de datos: MySQL.</span>
-                        <div class="progress-container ">
-                            <div class="progress-bar"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <span>Herramientas: Git, GitHub, VS Code.</span>
-                        <div class="progress-container ">
-                            <div class="progress-bar"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <span> Ofimática y herramientas digitales.</span>
-                        <div class="progress-container ">
-                            <div class="progress-bar"></div>
-                        </div>
                     </li>
                 </ul>
             </section>
-               <section class="proyectos" >
-                <h2 class="titulo" id="proyectos" >Proyectos</h2>
-                <ul class="list">
-                <li>
-                    <div class="card">
-                        <h3>Traductor de Código Morse</h3>
-                        <span> <strong>Python| Tkinder </strong></span>
-                        <p>Aplicación con GUI para 
-                            convertir texto a código Morse y viceversa.</p>
-                          
-                    </div>
-                    <button class="btn"><a href="">Ver más</a></button>
-                </li>
-                <li>
-                    <div class="card">
-                        <h3>Juego de Tres en Raya</h3>
-                        <span> <strong>React | JavaScript</strong></span>
-                        <p>Juego interactivo con lógica de gestión de estados y eventos.</p> 
-                      
-                    </div>
-                    <button class="btn"><a href="">Ver más</a></button>
-                </li>
-                <li>
-                    <div class="card">
-                        <h3>To-Do List App </h3>
-                        <span> <strong>React | JavaScript</strong></span>
-                        <p>Lista de tareas responsiva para dispositivos móviles.</p>
-                    </div>
-                    <button class="btn"><a href="">Ver más</a></button>
-                </li>
-                <li>
-                    <div class="card">
-                        <h3>Portafolio Web</h3>
-                        <span> <strong>HTML | CSS</strong></span>
-                        <p> Página responsiva con secciones de proyectos, habilidades y contacto.</p>
-                    </div>
-                    <button class="btn"><a href="">Ver más</a></button>
-                </li>
-                </ul>
-
-            </section>
-
-  
     </div>
     <footer>
         <nav>
             <ul>
                 <li>
-                    <a href="" target="_blank">Linkenid</a>
+                    <a href="https://www.linkedin.com/" target="_blank">LinkenId</a>
                 </li>
                 <li>
-                    <a href="" target="_blank">Github</a>
+                    <a href="https://github.com/" target="_blank">GitHub</a>
                 </li>
                 <li>
-                    <a href="" target="_blank">Twitter</a>
+                    <a href="https://x.com/" target="_blank">Twitter</a>
                 </li>
             </ul>
         </nav>
-    </footer>
-    
+    </footer>  
 </body>
 </html>

@@ -1,23 +1,25 @@
 :root{
     font-size: 16px;;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto Flex", Arial, Helvetica, sans-serif;
     --main-text-color: #000000;
     --bg-color:#f3f3f3;
     --main-brand-color:#000000;
-    --hover-text-color:#d8d6d6;
+    --hover-text-color:#a9a9a9;
     --hover-bg-color:#211b1b;
+    --fill-percentag: 0%;
   }
 *{
     box-sizing: border-box;
 }
 
 a {
-  color: var(--main-text-color);
+    font-weight: 700;
+    color: var(--main-text-color);
     text-decoration: none;
     transition:  0.3s ease, color 0.3s ease;
   }
   a:hover {
-    color:#a9a9a9
+    color:#a9a9a9;
   }
 
 h1, h2, h3, h4 {
@@ -29,10 +31,12 @@ input{
 }
 p {
     margin: 0;
-    text-align:justify;
   }
 ul{
   list-style: none;
   margin: 0;
   padding: 0;
+}
+button{
+  border: none;
 }

@@ -1,29 +1,22 @@
 .btn{
-    color: var(--bg-color);
-    background-color: var(--main-text-color);
+    color: var( --hover-text-color);
+    background-color:var(--main-brand-color);
     border-radius: 5px;
-    padding: 0.3rem;
+    padding: 0.7rem;
     text-align: center;
     display: inline-block;
-    a{
-        color: var(--bg-color)
-     }
-    &.secondary{
-        background-color: #ff000082;
-        opacity: 1;
-    }
-
+    transition:background-color 0.3s ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 @media screen and (hover: hover){
     .btn{
         cursor: pointer;
     }
     .btn:hover{
-        background-color:var(--hover-bg-color);
+        color: var(--hover-text-color);
+        background-color:green;
         &.secondary{
-            background-color:red;
-        }
-        a{
+            background-color:#ff000082;
             color: var(--hover-text-color);
         }
     }

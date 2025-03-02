@@ -7,18 +7,18 @@ header{
     top:0;
     padding: 1rem;
     margin-bottom: 1rem;
+    z-index: 10;
 }
 .title{
     font-size: 20px;
     font-weight: 500;
     margin: 0;
 }
-/* Checkbox oculto */
+
 #menu-toggle {
     display: none;
 }
 
-/* Icono hamburguesa */
 .menu-icon {
     display: block;
     width: 40px;
@@ -28,10 +28,9 @@ header{
     background: var(--main-brand-color);
     height: 2px;
     margin: 10px 0;
-    transition: 0.3s;
+    transition:all 1s ease;
 }
 
-/* Lista del menú */
 .nav-links {
     display: none;
     text-align: center;
@@ -46,16 +45,20 @@ header{
     padding: 8px;
 }
 
-/* Mostrar menú al hacer clic */
 #menu-toggle:checked + .nav-links {
     display: block;
    
 } 
+@media screen and (min-width: 768px){
+    .menu-icon {
+        display: none;}
 
-/* Nav de botones     nav{
-        ul{
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-    } */
+    .nav-links{
+        display: block;
+        position:relative;
+        width: 40%;
+    }
+    .nav-links a{
+        display: inline;
+    }
+}

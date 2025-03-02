@@ -1,33 +1,39 @@
-.progress-container {
-    width: 90%px;
-    height: 8px;
-    background-color: #fcfcfc; /* Fondo de la barra */
-    overflow: hidden;
-    border-bottom: 1px black solid;
+.progress-bar[data-percent="80"] { --fill-percentage: 80%; }
+.progress-bar[data-percent="60"] { --fill-percentage: 60%; }
+.progress-bar[data-percent="40"] { --fill-percentage: 40%; }
+
+.hab-tec ul{
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.progress-bar {
-    height: 100%;
-    width: 0%; /* Empieza vacía */
-    background-color: var(--main-brand-color); /* Color de la barra */
-    line-height: 3px;
-    transition: width 1s ease; /* Transición suave */
-}
-
-li:hover .progress-bar {
-    width: 90%; /* Ajusta el porcentaje al pasar el ratón */
-}
-
-.hab-tec{
-
-    ul{
-        width: 60%;
-        list-style:circle;
-        
-    }
-    li{
+.hab-tec li{
         display: flex;
         flex-direction: column;
-        margin-bottom: 0.7rem;
+        align-items: center;
+        margin: 1rem 0;
     }
+.percent{
+    text-align:right;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-weight: 700;
+}
+.progress-container {
+    width: 90%;
+    height: 8px;
+    margin: 0.7rem 0;
+    border-bottom: 1px black solid;
+}
+.progress-bar {
+    height: 100%;
+    width: var(--fill-percentag);
+    background-color: var(--main-brand-color); 
+    transition: width 1s ease;
+}
+.hab-tec:hover .progress-bar {
+    width: var(--fill-percentage);
+}
+.hab-tec:hover .percent{
+    opacity: 1;
 }
